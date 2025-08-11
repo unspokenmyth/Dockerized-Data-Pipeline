@@ -1,0 +1,38 @@
+groups:
+  - name: trino-alerts
+    rules:
+      - alert: TrinoQueryFailuresHigh
+        expr: increase(trino_query_failed_total[5m]) > 5
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Trino query failures are high"
+          description: "More than 5 queries failed in the last 5 minutes."
+
+      - alert: TrinoLongRunningQuery
+        expr: max_over_time(trino_query_execution_time_seconds[5m]) > 300
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Long-running Trino query"
+          description: "At least one query has been running for over 5 minutes."
+
+      - alert: TrinoCoordinatorDown
+        expr: up{job="trino"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Trino coordinator is down"
+          description: "Prometheus failed to scrape metrics from the Trino coordinator."
+
+      - alert: TrinoHighMemoryUsage
+        expr: trino_memory_reserved_bytes / trino_memory_max_bytes > 0.85
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High memory usage in Trino"
+          description: "Trino is using over 85% of its allocated memory."
