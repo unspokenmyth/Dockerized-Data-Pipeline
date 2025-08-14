@@ -85,10 +85,9 @@ Follow these steps to get the entire data pipeline running on your local machine
     Clone this repository. The `--recurse-submodules` flag is important as it will also clone all the necessary configuration repositories.
 
     ```bash
-    git clone --recurse-submodules [https://github.com/unspokenmyth/open-data-pipeline.git](https://github.com/unspokenmyth/open-data-pipeline.git)
+    git clone --recurse-submodules [https://github.com/unspokenmyth/dockerizedd-data-pipeline-stack.git](https://github.com/unspokenmyth/dockerized-data-pipeline-stack.git)
     cd open-data-pipeline
     ```
-    *(Note: Replace the URL with your actual repository URL.)*
 
 2.  **Launch the Pipeline**
 
@@ -117,6 +116,7 @@ Once the stack is running, you can access the various web UIs:
 | **NiFi** | `http://localhost:8080/nifi`  |
 | **Superset** | `http://localhost:8088`       |
 | **Prometheus** | `http://localhost:9090`       |
+| **Grafana** | `http://localhost:3000`       |
 | **HDFS UI** | `http://localhost:9870`       |
 
 ### Shutting Down
