@@ -59,11 +59,11 @@ The configuration for each component is maintained in its own dedicated reposito
 
 | Component                                                                    | Description                                                    |
 | ---------------------------------------------------------------------------- | -------------------------------------------------------------- |
-| 🐘 [**Hadoop**](https://github.com/unspokenmyth/hadoop_conf)                   | Durable, distributed file system for scalable data storage.    |
-| 🐝 [**Hive**](https://github.com/unspokenmyth/hive_conf)                       | Central metastore service for managing the data catalog.       |
-| 🌊 [**NiFi**](https://github.com/unspokenmyth/nifi_conf)                       | Visual tool for orchestrating data flow and ingestion.         |
+| 🐘 [**Hadoop**](https://github.com/unspokenmyth/hadoop_config)                   | Durable, distributed file system for scalable data storage.    |
+| 🐝 [**Hive**](https://github.com/unspokenmyth/hive_config)                       | Central metastore service for managing the data catalog.       |
+| 🌊 [**NiFi**](https://github.com/unspokenmyth/nifi_config)                       | Visual tool for orchestrating data flow and ingestion.         |
 | ✨ [**Spark**](https://github.com/unspokenmyth/spark_build)                    | Engine for large-scale data processing and transformation.     |
-| 🔌 [**Trino**](https://github.com/unspokenmyth/trino_configs)                  | Fast, distributed SQL query engine for federated analytics.    |
+| 🔌 [**Trino**](https://github.com/unspokenmyth/trino_config)                  | Fast, distributed SQL query engine for federated analytics.    |
 | 📊 [**Prometheus**](https://github.com/unspokenmyth/prometheus_config)        | System for monitoring services and collecting metrics.         |
 | 📈 [**Superset**](https://github.com/unspokenmyth/superset_config)             | Platform for data exploration, visualization, and dashboards.  |
 
@@ -85,7 +85,7 @@ Follow these steps to get the entire data pipeline running on your local machine
     Clone this repository. The `--recurse-submodules` flag is important as it will also clone all the necessary configuration repositories.
 
     ```bash
-    git clone --recurse-submodules [https://github.com/unspokenmyth/dockerizedd-data-pipeline-stack.git](https://github.com/unspokenmyth/dockerized-data-pipeline-stack.git)
+    git clone --recurse-submodules [https://github.com/unspokenmyth/Dockerized-Data-Pipeline.git](https://github.com/unspokenmyth/dockerized-data-pipeline.git)
     cd open-data-pipeline
     ```
 
