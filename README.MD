@@ -60,9 +60,9 @@ This pipeline integrates best-in-class open-source tools. The configuration for 
 
 | Service                                                                      | Role in the Pipeline                                           |
 | ---------------------------------------------------------------------------- | -------------------------------------------------------------- |
-| 🐘 [**Hadoop**](https://github.com/unspokenmyth/hadoop_config)                 | Provides distributed, fault-tolerant storage with HDFS.        |
-| 🐝 [**Hive**](https://github.com/unspokenmyth/hive_config)                     | Acts as the central metadata catalog for all our data.         |
 | 🌊 [**NiFi**](https://github.com/unspokenmyth/nifi_config)                     | Manages data ingestion and automates data flows visually.      |
+| 🐘 [**HDFS**](https://github.com/unspokenmyth/hadoop_config)                 | Provides distributed, fault-tolerant storage with HDFS.        |
+| 🐝 [**Hive Metastore**](https://github.com/unspokenmyth/hive_config)                     | Acts as the central metadata catalog for all our data.         |
 | ✨ [**Spark**](https://github.com/unspokenmyth/spark_config)                   | Powers large-scale data transformation and processing.         |
 | 🔌 [**Trino**](https://github.com/unspokenmyth/trino_config)                   | Enables fast, interactive SQL queries across all data sources. |
 | 📊 [**Prometheus**](https://github.com/unspokenmyth/prometheus_config)        | Collects metrics on the health and performance of all services.|
